@@ -68,6 +68,9 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 
+# Vendor - prebuilt
+BOARD_PREBUILT_VENDORIMAGE := device/samsung/a22x/prebuilts/vendor.img
+
 # Filesystems
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -131,3 +134,6 @@ BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manife
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_qsqs.xml
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_ss.xml
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_tsts.xml
+
+# Disable dexpreopt check
+DISABLE_DEXPREOPT_CHECK := true
