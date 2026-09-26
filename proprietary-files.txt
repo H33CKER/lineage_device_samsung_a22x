@@ -1,4 +1,4 @@
-# Unpinned blobs from a22xub-user 13 TP1A.220624.014 A226BRUBSBDXH1 release-keys
+# Unpinned blobs from a22xnsxx-user 12 SP1A.210812.016 A226BXXSBDYA1 release-keys
 
 # Audio
 vendor/bin/hw/android.hardware.audio.service.mediatek
@@ -13,7 +13,7 @@ vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6833.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/audio_common-aidl-cpp.so
-vendor/lib/audioclient-types-aidl-cpp.so
+#vendor/lib/audioclient-types-aidl-cpp.so
 vendor/lib/framework-permission-aidl-cpp.so
 vendor/lib/libaedv.so
 vendor/lib/libalsautils.so
@@ -291,9 +291,9 @@ vendor/lib/mt6833/libaiselector.so
 vendor/lib/mt6833/libdpframework.so
 vendor/lib/mt6833/libmtk_drvb.so
 vendor/lib/mt6833/libpq_prot.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
+#vendor/lib/camera.device@3.2-impl.so
+#vendor/lib/camera.device@3.3-impl.so
+#vendor/lib/camera.device@3.4-impl.so
 vendor/lib/libCamera_w1bf2253deplh3mipiraw_E2EHDR_Preview.so
 vendor/lib/libCamera_w1bf2253deplh3mipiraw_E2EHDR_Video.so
 vendor/lib/libCamera_w1bf2253deplh3mipiraw_Face_Capture.so
@@ -1516,14 +1516,13 @@ vendor/lib64/w1ov64b40reartxd_mipi_raw_IdxMgr.so
 vendor/lib64/w1sc500cswidely_mipi_raw_IdxMgr.so
 
 # CAS
-vendor/bin/hw/android.hardware.cas@1.2-service-lazy
-vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
+#vendor/bin/hw/android.hardware.cas@1.2-service-lazy
+#vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
 
 # Display
 lib/vendor.mediatek.hardware.mms@1.0.so
 lib/vendor.mediatek.hardware.mms@1.1.so
-lib/vendor.mediatek.hardware.mms@1.2.so
+lib/vendor.mediatek.hardware.mms@	1.2.so
 lib/vendor.mediatek.hardware.mms@1.3.so
 lib/vendor.mediatek.hardware.pq@2.0.so
 lib/vendor.mediatek.hardware.pq@2.1.so
@@ -1539,12 +1538,12 @@ lib64/vendor.mediatek.hardware.pq@2.2.so
 lib64/vendor.mediatek.hardware.pq@2.3.so
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
+#vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+#vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
+#vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
+#vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -1611,10 +1610,10 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
-vendor/bin/hw/android.hardware.drm@1.4-service.widevine
-vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
-vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+#vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
+#vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+#vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
+#vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/mediacas/libclearkeycasplugin.so
@@ -1636,9 +1635,8 @@ vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+#vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+#vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/hw/fingerprint.silead.default.so
 vendor/lib/libsl_fp_impl.so
 vendor/lib/libteecl.so
@@ -1650,8 +1648,8 @@ vendor/lib64/libteecl.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
+#vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+#vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.mt6833.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
@@ -1679,8 +1677,8 @@ vendor/lib64/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service
-vendor/etc/init/android.hardware.keymaster@4.0-service.rc
+#vendor/bin/hw/android.hardware.keymaster@4.0-service
+#vendor/etc/init/android.hardware.keymaster@4.0-service.rc
 vendor/lib64/libkeymaster4.so
 vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libkeymaster_helper.so
@@ -1697,29 +1695,29 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libdatasource.so
+#etc/seccomp_policy/mediacodec.policy
+#lib64/lib66/libdatasource.solib/libdatasource.so
 lib/libdatasource_local_cache.so
 lib/libmedia_codeclist.so
 lib/libomafldrm.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_framecapture_utils.so
+#lib64/libstagefright_bufferpool@2.0.1.solib64/libstagefright_bufferpool@2.0.1.solib/libstagefright_bufferpool@2.0.1.so
+#lib64/libstagefright_codecbase.solib/libstagefright_codecbase.so
+#lib64/libstagefright_framecapture_utils.solib/libstagefright_framecapture_utils.so
 lib/libstagefright_httplive_sec.so
-lib/libstagefright_surface_utils.so
-lib64/libdatasource.so
+#lib64/libstagefright_surface_utils.solib/libstagefright_surface_utils.so
+#lib64/libdatasource.so
 lib64/libdatasource_local_cache.so
-lib64/libmedia_codeclist.so
+#lib64/libmedia_codeclist.so
 lib64/libomafldrm.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_surface_utils.so
+#lib64/libstagefright_bufferpool@2.0.1.so
+#lib64/libstagefright_codecbase.so
+#lib64/libstagefright_framecapture_utils.so
+#lib64/libstagefright_surface_utils.so
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
-vendor/bin/hw/android.hardware.media.omx@1.0-service
+#vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
+#vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libMtkOmxAdpcmDec.so
@@ -1836,7 +1834,7 @@ vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/hw/mtkfusionrild
-vendor/bin/hw/rild
+#vendor/bin/hw/rild
 vendor/etc/init/mtkrild.rc
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
@@ -1907,16 +1905,16 @@ vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 
 # Wi-Fi
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
+#vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
+#vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+#vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -1970,11 +1968,11 @@ vendor/bin/aee_aedv
 vendor/bin/aee_aedv64
 vendor/bin/aee_dumpstatev
 vendor/bin/aeev
-vendor/bin/applypatch
+#vendor/bin/applypatch
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
+#vendor/bin/boringssl_self_test32
+#vendor/bin/boringssl_self_test64
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/check_keybox
@@ -1983,13 +1981,13 @@ vendor/bin/chipinfo
 vendor/bin/create_factory_efs_file
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
+#vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dreport
 vendor/bin/dtc_vendor
-vendor/bin/dumpsys
+#vendor/bin/dumpsys
 vendor/bin/emservice
 vendor/bin/factory
 vendor/bin/fsdbg_vendor
@@ -2806,7 +2804,7 @@ vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
+#vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
@@ -2867,8 +2865,8 @@ vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/vendor.sem.rilchip.rc
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
-vendor/etc/init/vendor_flash_recovery.rc
-vendor/etc/init/vndservicemanager.rc
+#vendor/etc/init/vendor_flash_recovery.rc
+#vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/volte_rcs_ua.rc
 vendor/etc/init/vpud.rc
@@ -3062,7 +3060,7 @@ vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
-vendor/etc/vintf/manifest/power-default.xml
+#vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
@@ -3099,7 +3097,7 @@ vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/factory.ini
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.emmc
+#vendor/etc/fstab.emmc
 vendor/etc/fstab.enableswap
 vendor/etc/fstab.mt6833
 vendor/etc/fstab.ramplus
@@ -3108,7 +3106,7 @@ vendor/etc/gbe.cfg
 vendor/etc/hqm_device.xml
 vendor/etc/linker.config.pb
 vendor/etc/mecp.bin
-vendor/etc/mkshrc
+#vendor/etc/mkshrc
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/mtu-conf.xml

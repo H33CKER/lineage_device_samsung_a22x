@@ -111,7 +111,6 @@ sysclktz 0
 
 
 # Link /vendor to /system/vendor for devices without a vendor partition.
-    symlink /system/vendor /vendor
 
     # Mount cgroup mount point for cpu accounting
     mount cgroup none /acct cpuacct

@@ -54,16 +54,39 @@ endif
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
-BOARD_DTBOIMG_PARTITION_SIZE := 113440
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 41943040
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
+
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    product \
     system \
-    odm \
-    vendor
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+    product \
+    vendor \
+    odm
+
+BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
+
+# Filesystems
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+
+BOARD_USES_PRODUCTIMAGE := true
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_PRODUCT := product
+
+BOARD_USES_VENDORIMAGE := true
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+
+BOARD_USES_ODMIMAGE := true
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_ODM := odm
+
+BOARD_USES_METADATA_PARTITION := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
@@ -81,6 +104,7 @@ TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/vendor_dlkm.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 BOARD_INCLUDE_RECOVERY_DTBO := true
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/device_system_compatibility_matrix.xml
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -101,3 +125,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
 include vendor/samsung/a22x/BoardConfigVendor.mk
+BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_dsds.xml
+BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_qsqs.xml
+BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_ss.xml
+BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_tsts.xml

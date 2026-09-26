@@ -98,7 +98,6 @@ on init
     symlink /sys/kernel/debug /d
 
     # Link /vendor to /system/vendor for devices without a vendor partition.
-    symlink /system/vendor /vendor
 
 # Temp Backward compatibility
     symlink /dev/block/by-name/boot /dev/bootimg
