@@ -125,6 +125,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
 include vendor/samsung/a22x/BoardConfigVendor.mk
+
+# Manifest
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_dsds.xml
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_qsqs.xml
 BOARD_ODM_MANIFEST_FILES += vendor/samsung/a22x/proprietary/odm/etc/vintf/manifest_ss.xml

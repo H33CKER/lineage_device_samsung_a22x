@@ -62,6 +62,8 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     init.recovery.mt6833.rc \
     init.recovery.samsung.rc \
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio@2.0-impl \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc

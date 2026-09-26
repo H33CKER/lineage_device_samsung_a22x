@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-A226BR (a22x)
+# Android device tree for samsung SM-A226B (a22x)
 
 ```
 #
