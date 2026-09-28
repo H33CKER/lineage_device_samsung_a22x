@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from a22x device
 $(call inherit-product, device/samsung/a22x/device.mk)
 
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 PRODUCT_DEVICE := a22x
 PRODUCT_NAME := lineage_a22x
 PRODUCT_BRAND := samsung
